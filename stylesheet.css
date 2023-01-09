@@ -1,14 +1,14 @@
-*{maragin:0px auto}
+*{margin:0px auto}
 body
 	{
-		background-color : #695a5a ;
+		background-color : #2b5f5b ;
 		margin:10px;
 		padding: 10px;
 	}
 .container
 	{
 	width:100%;
-	heigth:auto;
+	height:auto;
 	text-decoration:none;
 	}
 .header
@@ -16,24 +16,42 @@ body
 	width: 100%;
 	height:auto;
 	float:left;
-	background-color:#AFEEEE;#00ff72bd
-	text-decuration:none;
+	background-color:#AFEEEE;
+	text-decoration:none;
 	}
 .header h1
 	{
 	color:#008080;
-	text-align:left;
+	align-items:center;
 	font-family:Audiowide Regular;
-	font-size: 30pt;
+		padding:10px;
+	text-decoration:none;
+	
+	}
+.header h2
+	{
+	color:#020202;
+	align-items:center;
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	
 	padding:10px;
 	text-decoration:none;
+	
 	}
-.header_img
+.headerimg
 	{
 	width:20%;
 	height:auto;
 	float:right;
 	margin:10px;
+	}
+.header_img2
+	{
+	width:40%;
+	height:auto;
+	float:left;
+	margin:10px;
+	object-fit: contain;
 	}
 
 .nav 
@@ -53,8 +71,8 @@ body
 	}
 .nav ul li
 	{
-	list style-type:none;
-	display:inline;
+	list-style:none;
+	display :inline ;
 	}
 .nav ul li a
 	{
@@ -62,13 +80,28 @@ body
 	text-decoration:none;
 	margin:0 0 0 45px;
 	font-family:Vani Regular;
-	display:inline;
+	display:inline-block;
+	transition: 0.3s all;
 	}
 .nav ul li a:hover
 	{
-	background-color:#2802ff;
-	color:#fff;
+	color:rgb(49, 0, 165);
+	
 	}
+.hover-line::after
+	{
+		content: " ";
+		display: block;
+		width: 0%;
+		height: 2px;
+		background-color: #666;
+		transition: width 0.3s;
+	}
+.hover-line:hover:after	
+{
+	width:100%;
+	transition:width .3s;
+}
 	
 .footer
 	{
@@ -82,7 +115,7 @@ body
 	{
 	color:#fff;
 	text-align:center;
-	font-family:Times New Roman Regular ;
+	font-family:Times_New_Roman_Regular ;
 	font-size:20px;
 	margin:10px 10px 10px 10px;
 	}
@@ -116,7 +149,7 @@ body
 	width:100%;
 	height:auto;
 	float:center;
-	backgroung-color:#fff;
+	background-color:#fff;
 	margin:10 10 10 10px;
 	}
 .info
@@ -129,7 +162,8 @@ body
 	padding:10px;
 	}
 .paragraph
-	{width:auto;
+	{
+	width:auto;
 	height:auto;
 	float:left;
 	background-color:#ccc;
@@ -144,19 +178,20 @@ body
 	margin:10px 05px 05px;
 	background-color:#000;
 	padding:0 10px;
+	align-items: center;
 	}
 .description h2
 	{
 	color:#fff;
 	background-color:#666;
 	text-align:center;
-	fontfamily:arial narrow;
+	font-family:arial narrow;
 	padding:5px;
 	border-radius:5px;
 	}
 .description p
 	{
-	color:#ccc;
+	color:rgb(122, 13, 13);
 	font-family:Arial;
 	font-size:12px;
 	padding:10px;
@@ -169,7 +204,7 @@ body
 	width:100%;
 	height:auto;
 	float:center;
-	backgroung-color:#fff;
+	background-color:#fff;
 	margin:10 10 10 10px;
 	}
 	.descriptiona_img
@@ -177,13 +212,13 @@ body
 	width:100%;
 	height:auto;
 	float:left;
-	backgroung-color:#fff;
+	background-color:rgb(46, 194, 137);
 	margin:10 10 10 10px;
 	margin-top:10px;
 	}
 
 not used
-.tooltip {
+.hover {
     position: reletive;
     display: hover;
     border-bottom: 1px dotted black;
